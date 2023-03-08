@@ -1,0 +1,21 @@
+# git commit message template
+# 제목(무엇을), 상세(어떻게), 이유(왜) 를 작성합니다
+# 제목 작성 시, `(#git Issue)`를 작성합니다
+
+#######무엇을#######
+( )
+#######어떻게#######
+DETAIL : 
+#######왜#######
+REASON : 
+##################
+# Fix : 수정
+# Add : 추가
+# Remove : 삭제
+# Simplify : 단순화
+# Update : 보완
+# Implement : 구현
+# Prevent : 방지
+# Move : 이동
+# Rename : 이름변경
+##################
