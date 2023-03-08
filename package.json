@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "postinstall": "husky install",
     "format": "prettier --cache --write .",
-    "lint": "eslint --cache ./src"
+    "lint": "eslint --cache ./src/**/*.{js,jsx,ts,tsx}"
   },
   "eslintConfig": {
     "extends": [
