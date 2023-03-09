@@ -12,6 +12,9 @@
   "plugins": ["react"],
   "rules": {
     "no-var": "error",
-    "comma-dangle": ["error", { "functions": "ignore" }]
+    "comma-dangle": ["off", { "functions": "ignore" }],
+    "func-style": ["error", "expression"],
+    "react/function-component-definition": [2, { "namedcomponents": "arrow-function" }],
+    "linebreak-style": 0
   }
 }
