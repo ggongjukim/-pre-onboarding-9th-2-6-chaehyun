@@ -1,7 +1,6 @@
 import React from 'react';
+import Router from './Router';
 
-function App() {
-  return <>app</>;
-}
+const App = () => <Router />;
 
 export default App;

@@ -11,7 +11,18 @@
   },
   "plugins": ["react"],
   "rules": {
+    "react/function-component-definition": [
+      "warn",
+      { "namedcomponents": "arrow-function" }
+    ],
     "no-var": "error",
-    "comma-dangle": ["error", { "functions": "ignore" }]
+    "comma-dangle": ["off", { "functions": "ignore" }],
+    "linebreak-style": 0,
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "warn",
+    "react/prop-types": 0,
+    "react/destructuring-assignment": "warn",
+    "object-curly-newline": "off"
   }
 }
