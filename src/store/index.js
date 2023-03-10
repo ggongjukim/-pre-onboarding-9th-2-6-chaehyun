@@ -7,5 +7,6 @@ const store = configureStore({
     reservations: reservationslistSlice.reducer,
     contents: contentlistSlice.reducer,
   },
+  devTools: process.env.NODE_ENV !== 'production',
 });
 export default store;
