@@ -23,6 +23,12 @@
     "no-unused-vars": "warn",
     "react/prop-types": 0,
     "react/destructuring-assignment": "warn",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "arrow-body-style": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "array-callback-return": "off",
+    "no-param-reassign": "off",
+    "no-unsafe-optional-chaining": "off"
   }
 }

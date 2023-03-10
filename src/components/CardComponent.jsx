@@ -1,13 +1,31 @@
 import * as S from '@chakra-ui/react';
-import { createReservations } from '../api';
+import { useSelector, useDispatch } from 'react-redux';
+import {
+  createReservationsList,
+  addcurrentPurchases,
+} from '../store/reservationsSlice';
 
 const CardComponent = (props) => {
-  const { idx, name, mainImage, spaceCategory, price } = props.content;
+  const { idx, name, mainImage, spaceCategory, price, maximumPurchases } =
+    props.content;
+  const dispatch = useDispatch();
+  const reservations = useSelector((state) => state.reservations);
   const onClickReservation = (_id) => {
-    (async () => {
-      const result = await createReservations(_id);
-      console.log('result', result);
-    })();
+    const current = reservations?.filter((item) => item.id === _id);
+    console.log(current);
+
+    if (current.length > 0) {
+      dispatch(
+        addcurrentPurchases({
+          id: _id,
+          max: maximumPurchases,
+        })
+      );
+    } else {
+      dispatch(createReservationsList(_id));
+    }
+
+    console.log('reservations', reservations);
   };
 
   return (
